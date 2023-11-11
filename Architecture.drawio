@@ -1,0 +1,119 @@
+<mxfile host="Electron" modified="2023-11-01T14:19:16.399Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="AF-Rs-h-JrezpZ5JYwmj" version="22.0.2" type="device">
+  <diagram name="Page-1" id="4CdWH2eDSMgCI4PQBx9s">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R8Mt95sp1rjtFb0XrjuO-26" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;u style=&quot;font-size: 20px;&quot;&gt;Azure Data Factory&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="280" width="530" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-2" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;u style=&quot;font-size: 20px;&quot;&gt;Azure Data Lake Storage Gen2&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="140" y="100" width="820" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=default;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="gWup5laghGvxsacqv_S4-1" target="gWup5laghGvxsacqv_S4-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;ADF &lt;br&gt;Copy Activity&lt;br&gt;(Ingestion)&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="gWup5laghGvxsacqv_S4-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.0846" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-107" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;On-prem&lt;br&gt;SQL Server &lt;br&gt;Database&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="580" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" parent="1" source="gWup5laghGvxsacqv_S4-3" target="gWup5laghGvxsacqv_S4-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="195" />
+              <mxPoint x="270" y="320" />
+              <mxPoint x="370" y="320" />
+              <mxPoint x="370" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Azure&lt;br&gt;DataBricks&lt;br&gt;(Cleansing)&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="gWup5laghGvxsacqv_S4-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.1867" relative="1" as="geometry">
+            <mxPoint x="32" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;u&gt;Bronze&lt;br&gt;Layer&lt;/u&gt;&lt;br&gt;&lt;/b&gt;Raw Data&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="155" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;u&gt;Silver Layer&lt;/u&gt;&lt;br&gt;&lt;/b&gt;Cleansed Data&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="155" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;u&gt;Gold&amp;nbsp;Layer&lt;/u&gt;&lt;br&gt;&lt;/b&gt;Data Warehouse&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="155" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="gWup5laghGvxsacqv_S4-6" target="gWup5laghGvxsacqv_S4-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="440" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="900" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-20" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Power BI&lt;br&gt;(Reporting)&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="gWup5laghGvxsacqv_S4-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.0182" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-43" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-6" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;u&gt;SQL Server&lt;/u&gt;&lt;br&gt;&lt;/b&gt;Data Marts&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="155" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-18" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Reports&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="580" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-30" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="410" y="540" width="360" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-31" value="" style="group;shadow=0;" parent="gWup5laghGvxsacqv_S4-30" vertex="1" connectable="0">
+          <mxGeometry x="-25" y="-10" width="360" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-27" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;u&gt;Security &amp;amp; Governance&lt;/u&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=0;" parent="gWup5laghGvxsacqv_S4-31" vertex="1">
+          <mxGeometry width="360" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-28" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Azure Active&lt;br&gt;Directory&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" parent="gWup5laghGvxsacqv_S4-31" vertex="1">
+          <mxGeometry x="40" y="50" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gWup5laghGvxsacqv_S4-29" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Azure Key&lt;br&gt;Vault&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" parent="gWup5laghGvxsacqv_S4-31" vertex="1">
+          <mxGeometry x="200" y="50" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R8Mt95sp1rjtFb0XrjuO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" parent="1" source="gWup5laghGvxsacqv_S4-4" target="gWup5laghGvxsacqv_S4-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="195" as="sourcePoint" />
+            <mxPoint x="630" y="195" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="195" />
+              <mxPoint x="500" y="320" />
+              <mxPoint x="600" y="320" />
+              <mxPoint x="600" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R8Mt95sp1rjtFb0XrjuO-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Azure&lt;br&gt;DataBricks&lt;br&gt;(Transformation)&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="R8Mt95sp1rjtFb0XrjuO-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.1867" relative="1" as="geometry">
+            <mxPoint x="33" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1TpRCfIdp_OAQbvffis-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" parent="1" source="gWup5laghGvxsacqv_S4-5" target="gWup5laghGvxsacqv_S4-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="195" as="sourcePoint" />
+            <mxPoint x="860" y="195" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="195" />
+              <mxPoint x="730" y="320" />
+              <mxPoint x="830" y="320" />
+              <mxPoint x="830" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1TpRCfIdp_OAQbvffis-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Azure &lt;br&gt;Synapse Analytics&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;(Loading)&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="s1TpRCfIdp_OAQbvffis-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.1867" relative="1" as="geometry">
+            <mxPoint x="33" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
